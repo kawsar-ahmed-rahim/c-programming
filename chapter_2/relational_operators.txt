@@ -1,0 +1,4 @@
+equal to : ==
+greater and greater than : >, >=
+less and lesser than : <, <=
+not equal to : !=
