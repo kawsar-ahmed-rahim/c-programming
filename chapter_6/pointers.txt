@@ -1,0 +1,17 @@
+// pointer is a variable that stores the memory address of another variable
+// synyax
+
+int age = 22;
+int *ptr = &age; // * = value of address
+int _age = *ptr; // & = address of value
+
+
+// format specifier
+
+printf("%p", &age) // address
+printf("%u", &age) // address
+
+printf("%u", ptr) // pointers
+
+printf("%u", &ptr) // address of pointers
+
