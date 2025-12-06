@@ -8,7 +8,7 @@ int main() {
     }
     return 0;
 }
-
+//! print 0 to n
 # include<stdio.h>
 
 int main() {

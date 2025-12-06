@@ -1,13 +1,13 @@
 # include<stdio.h>
 
- void printHello();// declaration/prototype
+void printHello();// declaration/prototype
 
- int main() {
+int main() {
     printHello(); //function call
     return 0;
  }
 
  // function definition
- void printHello() {
+void printHello() {
     printf("Hello!");
  }

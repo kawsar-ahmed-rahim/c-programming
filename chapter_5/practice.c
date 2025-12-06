@@ -43,8 +43,8 @@ int main() {
     return 0;
 }
 
-int sum(int a, int b) {
-    return a+ b;
+int sum(int x, int y) {
+    return x + y;
 }
 
 
@@ -57,12 +57,12 @@ int main() {
     printf("enter number : ");
     scanf("%d", &n);
 
-    printTable(n); //argument/actual parameter
+    printTable(n); //argument/actual parameter/used to send value
 
     return 0;
 }
 
-void printTable(int n) { //parameter/formal parameter
+void printTable(int n) { //parameter/formal parameter/used to receive value
     for(int i=1; i<=10; i++) {
         printf("%d", i*n);
     }
@@ -76,32 +76,27 @@ void calculatePrice(float value);
 int main() {
     float value = 100.0;
     calculatePrice(value);
-    printf("value is : %f\n", value)
+    printf("value is : %f\n", value) //100.00000000
     return 0;
 }
 
 void calculatePrice(float value) {
     value = value + (0.18 * value);
-    printf("final price is : %f\n", value)
+    printf("final price is : %f\n", value) //118.0000000000
 }
 
 //! power
 # include<stdio.h>
 # include<math.h>
 
-void calculatePrice(float value);
 
 int main() {
     int n = 4;
-    printf("%f", pow(n, 2));
+    printf("%f", pow(n, 2));// pow function always float return kore
 
     return 0;
 }
 
-void calculatePrice(float value) {
-    value = value + (0.18 * value);
-    printf("final price is : %f\n", value)
-}
 
 
 //! area of a square, circle, rectangle
@@ -130,4 +125,34 @@ float circleArea(float side) {
 
 float rectangleArea(float side) {
     return a * b;
+}
+
+
+//! celsius to fahrenheit
+float convertTemp(float celsius);
+
+int main() {
+    printf("far is : %f",convertTemp(6));
+    return 0;
+}
+
+int convertTemp(float celsius) {
+    float far = celsius * (9.0/5.0) + 32;
+        return far;
+}
+
+ //! percentage
+int calcPercentage(int science, int math, int english);
+
+int main() {
+    int sc = 98;
+    int math = 96;
+    int english = 99;
+    
+    printf("per. is : %d",calcPercentage(sc, math, english));
+    return 0;
+}
+
+int calcPercentage(int science, int math, int english) {
+    return ((science + math + english) / 3 );
 }

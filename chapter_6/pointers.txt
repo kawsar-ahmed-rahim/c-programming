@@ -2,8 +2,8 @@
 // synyax
 
 int age = 22;
-int *ptr = &age; // * = value of address
-int _age = *ptr; // & = address of value
+int *ptr = &age; // * = value at address operator
+int _age = *ptr; // & = address of operator //! 22
 
 
 // format specifier
@@ -15,3 +15,25 @@ printf("%u", ptr) // pointers
 
 printf("%u", &ptr) // address of pointers
 
+//address
+
+int main(){
+    int age = 22;
+    int *ptr = &age;
+
+    printf("%u\n",&age);//1200
+    printf("%u\n",ptr);//1200
+    printf("%u\n",&ptr);//1000
+}
+
+//value
+
+
+int main(){
+    int age = 22;
+    int *ptr = &age;
+
+    printf("%d\n",age);//22
+    printf("%u\n",*ptr);//22
+    printf("%u\n",*(&age));//22
+}

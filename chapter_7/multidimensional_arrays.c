@@ -1,3 +1,4 @@
+//! 2D array
 int arr[] = {{1, 2}, {3, 4}}
 
 arr[0][0] = 1
@@ -5,8 +6,26 @@ arr[0][1] = 2
 arr[1][0] = 3
 arr[1][1] = 4
 
+//! marks
 
-//count odd numbers
+int main(){
+    int marks[2][3]; // _ _ _ || _ _ _
+    marks[0][0] = 90;
+    marks[0][1] = 78;
+    marks[0][2] = 98;
+
+    marks[1][0] = 68;
+    marks[1][1] = 78;
+    marks[1][2] = 58;
+
+    printf("%d",marks[1][2]);
+
+
+    return 0;
+
+}
+
+//!count odd numbers
 
 int countOdd(int arr[], int n);
 int main () {
@@ -25,7 +44,7 @@ int countOdd(int arr[], int n) {
     return count;
 }
 
-// reverse an array
+//! reverse an array
 
 void reverse(int arr[], int n);
 void printArr(int arr[], int n);
@@ -57,7 +76,7 @@ void reverse(int arr[], int n) {
     return count;
 }
 
-// nth fibonacci number by a loop
+// nth fibonacci number by a array
 
 int main() {
     int n;
@@ -70,7 +89,7 @@ int main() {
 
     for(int i=2; i<n; i++){
         fib[i] = fib[i-1] + fib[i-2]
-        printf("%d\t", fib[1]);
+        printf("%d\t", fib[i]);
     }
     printf("\n");
     return 0;
@@ -92,12 +111,9 @@ printf("\n ")
 for(int i=0, i<10, i++) {
         printf("%d\t",tables[1][i]);
 }
-
     return 0;
-
 }
-
 void storeTable(int arr[][10], int n, int m, int number) {
     for(int i=0, i<m, i++) {
         arr[n][i] = number * (i+1);
-    }
+    }}

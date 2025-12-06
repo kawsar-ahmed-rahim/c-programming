@@ -1,6 +1,9 @@
+//!collection of similar data types stored at contiguous memory locations
+
+//! array is a pointer
 //! syntax
 
-marks[] = {23, 45, 45};
+int marks[] = {23, 45, 45};
 
 //! input and output
 

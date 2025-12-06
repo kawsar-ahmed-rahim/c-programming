@@ -1,5 +1,5 @@
 # include<stdio.h>
-
+//! print 1 to 5
 int main() {
     int i = 1;
     do {
@@ -8,6 +8,7 @@ int main() {
     } while(i<=5);
     return 0;
 }
+//! take input and break when it is a odd number
 
 int main() {
     int n;

@@ -1,5 +1,12 @@
-# include <stdio.h>
 //! pointer to pointer is who saves pointers address
+
+//!syntax
+int **pptr;
+char **pptr;
+float **pptr;
+
+//! pointer to pointer
+# include <stdio.h>
 int main() {
     float price = 100.00;
     float *ptr = &price;
@@ -7,8 +14,8 @@ int main() {
     
 }
 
+//! print i by pptr
 # include <stdio.h>
-
 int main() {
     int i = 5;
     int *ptr = &i;
@@ -26,25 +33,27 @@ void _square(int* n);
 
 int main() {
     int number = 4;
-    square(number);
+    square(number);  //square = 16
     printf("number = %d\n", number); // number = 4
 
-    _square(&number);
-    printf("number = %d\n", number);
+    _square(&number);   //square = 16
+    printf("number = %d\n", number); //number = 16
     return 0;
     
 }
 // call by value
 void square(int n) {
     n = n * n;
-    printf("square = %d\n", n) //square = 16
-}
+    printf("square = %d\n", n) 
 
 // call by reference/address
 void square(int *n) {
     *n = (*n) * (*n);
     printf("square = %d\n", *n);
 }
+
+//! call by value te variable ar address different thake and call bny reference te address same thake
+
 
 //! swap 2 numbers
 
@@ -79,7 +88,7 @@ void swap(int a, int b) {
 }
 
 
-
+//! return multiple values
 void doWork(int a, int b, int *sum, int *prod, int *avg);
 
 int main() {
