@@ -12,7 +12,6 @@ int main () {
 
 //! format specifier
 
-void printString(char arr[]);
 
 int main() {
     char name[50];
@@ -35,19 +34,38 @@ int main() {
     return0;
 }
 
-void printString(char arr[]) {
-    for (int i=0; arr[i] != '\0'; i+=){
-        printf("%c",arr[i])
-    }
-}
 //! input a string = gets(str) <<<  fgets(str, 100, stdin)
 //! output a string = puts(str)
 
+//! input and output
+int main(){
+    char str[100];
+    fgets(str, 100, stdin);
+    puts(str);
+
+    return 0;
+}
+
 //! standard library function
+
+
 // length = strlen(str) <<<  <string.h>
-// copies value of old to new string = strcpy(newStr, oldStr)
-// concatenates = strcat(firstStr, secStr)
+
+// copies value of old to new string = strcpy(newStr, oldStr)  //oldstr ar value newstr a save hobe
+
+// concatenates = strcat(firstStr, secStr) // dui str ke jora lagabe
+
+//!concatenate
+
+int main(){
+    char firststr[100] = "Hello";
+    char secondstr[] = "World";
+    strcat(firstStr, secStr)    puts(firststr);
+
+    return 0;
+}
 //comparison = strcmp(one, two)
         // 0=>equal
         //pos=>first>second
+        //neg=>first<second
         

@@ -1,6 +1,6 @@
 # include<stdio.h> // pre-processor director
 # include<stdio.h>
-
+//! even or odd
 int main() {
     int number;
     printf("enter number : ");

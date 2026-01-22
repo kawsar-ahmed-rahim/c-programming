@@ -1,5 +1,5 @@
 # include<stdio.h>
-//! print 1 to 5
+//! print  5 times hello world
 int main() {
     for(int i=1; i<=5; i=i+1) {
         printf("Hello world \n");
@@ -17,8 +17,8 @@ int main() {
     return 0;
 }
 
-// i++ = use,then increase (pre increment operator)
-// ++i = increase then use (post increment operator)
+// i++ = use,then increase (post increment operator)
+// ++i = increase then use (pre increment operator)
 
 //i++ == i=i+1
 //i-- == i=i-1
@@ -76,7 +76,7 @@ int main(){
 
     int sum  = 0;
     for(int i=1, j=n; i<=n && j>1; i++, j--){
-        sum = sum + 1;
+        sum = sum + i;
         printf("%d\n"j);
     }
     printf("sum is %d \n",sum);

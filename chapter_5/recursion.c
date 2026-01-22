@@ -10,7 +10,7 @@ int main() {
 // recursive function
 void printHW(int count) {
     if(count == 0) {
-        return;
+        return; //will return nothing
     }
     printf("Hello world\n");
     printHW(count-1);
@@ -43,7 +43,7 @@ int main() {
     return 0;
 }
 
-//recursive function
+//!recursive function
 int fact(int n) {
     if(n == 0) { // base case
         return 1;

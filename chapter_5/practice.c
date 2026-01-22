@@ -37,8 +37,8 @@ int main() {
     printf("enter second number : ");
     scanf("%d", &b);
 
-    int s = sum(a, b);
-    printf("sum is : %d \n", s);
+    
+    printf("sum is : %d \n", sum(a, b));
 
     return 0;
 }

@@ -23,7 +23,7 @@ int main() {
             break;
         default : printf("not a valid day")
     return 0;
-}
+}}
 
 
 int main() {
@@ -48,4 +48,4 @@ int main() {
             break;
         default : printf("not a valid day")
     }
-    return 0;
+    return 0;}

@@ -1,6 +1,6 @@
 # include<stdio.h> // pre-processor director
 # include<stdio.h>
-
+//! check adult
 int main() {
     int age;
     printf("enter age : ");

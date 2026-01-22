@@ -1,10 +1,10 @@
 //! a collection of values of different data types
-
+//! example of structure!
 struct student { //user defined
     int roll;
     float cgpa;
     char name[100];
-}
+};
 
 int main () {
     struct student s1;
@@ -48,7 +48,7 @@ struct student {
 
 int main () {
     struct student s1 = {174, 5.5, "rahim"};
-    printf("%d", s1.roll);
+    printf("%d\n", s1.roll);
 
     return 0;
 }

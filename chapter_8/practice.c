@@ -1,4 +1,4 @@
-// 
+// ! input output
 void printString(char arr[]);
 
 int main() {
@@ -18,7 +18,7 @@ void printString(char arr[]) {
     printf("\n");
 }
 
-//print input's length
+//! print input's length
 int countLength(char arr[]);
 
 int main() {
@@ -36,13 +36,13 @@ int countLength(char arr[]) {
     return count-1;
 }
 
-//take input using %c
+//!take input using %c
 int main () {
     char str[100];
     char ch;
     int i = 0;
 
-    while (ch != '\n') {
+    while (ch != '\n') { //fgets
         scanf("%c", &ch);
         str[i] = ch;
         i++; 
