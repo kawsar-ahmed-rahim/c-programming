@@ -67,7 +67,7 @@ int fact(int n) {
 int fib(int n) {                  //fib(n) = fib(n-1) + fib(n-2)
 
     if(n == 0) {
-            return 0;
+        return 0;
         }
     else (n == 1) {
             return 1;
